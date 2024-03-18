@@ -97,3 +97,114 @@
       </script>
    </body>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+         .container {
+            display: flex;
+            position: relative;
+         }
+         .content {
+            display: flex;
+         }
+         .text {
+            flex: 1;
+         }
+         .image {
+            position: relative; /* Changed to relative */
+            transition: transform 1s ease;
+            transform: translateX(0%); /* Initial position */
+         }
+         .background-text {
+            display: none;
+            padding-left: 20px;
+         }
+         .additional-background-text {
+            display: none;
+         }
+         .Heading {
+            color: #f57005;
+            text-transform: uppercase;
+            font-size: 20px;
+         }
+         .Sub_heading {
+            font-size: 20px;
+            color: #000;
+            font-weight: 700;
+         }
+         .Description {
+            color: #7b8593;
+            font-size: 16px;
+            font-weight: 500;
+         }
+         .section {
+            display: flex;
+            gap: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="section">
+         <div class="main-img">
+            <img src="./category-normal-2.png" alt="Image">
+         </div>
+         <div class="container" onmouseover="moveImage()" onmouseout="hoverout()">
+            <div class="content">
+               <div class="image" id="image">
+                  <img src="./category-normal-2.png" alt="Image">
+               </div>
+            </div>
+            <div class="additional-background-text" id="additionalBackgroundText">
+               <h3 class="Heading">Lorem ipsum</h3>
+               <h3 class="Sub_heading">Lorem ipsum dolor sit amet.</h3>
+               <p class="Description">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.</p>
+               <p class="Description">Add-Lorem ipsum </p>
+            </div>
+            <div class="background-text" id="backgroundText">
+               <h3 class="Heading">Lorem ipsum</h3>
+               <h3 class="Sub_heading">Lorem ipsum dolor sit amet.</h3>
+               <p class="Description">Back-Lorem ipsum </p>
+               <p class="Description">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.</p>
+            </div>
+         </div>
+      </div>
+      <script>
+         let isImageMoved = false; // Flag to track if image is moved
+         
+         function moveImage() {
+            const image = document.getElementById('image');
+            const backgroundText = document.getElementById('backgroundText');
+            const additionalBackgroundText = document.getElementById('additionalBackgroundText');
+            
+            if (!isImageMoved) {
+               image.style.transform = 'translateX(100%)'; // Move image to the right
+               backgroundText.style.display = 'block';
+               additionalBackgroundText.style.display = 'none';
+               isImageMoved = true;
+            }
+         }
+         
+         function hoverout() {
+            const image = document.getElementById('image');
+            const backgroundText = document.getElementById('backgroundText');
+            const additionalBackgroundText = document.getElementById('additionalBackgroundText');
+            
+            if (isImageMoved) {
+               image.style.transform = 'translateX(0%)'; // Move image back to the initial position
+               backgroundText.style.display = 'none';
+               additionalBackgroundText.style.display = 'block';
+               isImageMoved = false;
+            }
+         }
+      </script>
+   </body>
+</html>
+
