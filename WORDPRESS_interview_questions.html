@@ -54,97 +54,121 @@
                <div class="col-lg-12">
                   <ol>
                   <li>
-                     <h2><span>questions:-</span>What is HTML?</h2>
-                     <p><span>answers:-</span>HTML stands for Hypertext Markup Language. It's the standard markup
-                        language used to create and design web pages.
+                     <h2><span>questions:-</span>What is WordPress?</h2>
+                     <p><span>answers:-</span>WordPress is an open-source content management system (CMS) that allows users to easily create, manage, and publish content on the web. It is based on PHP and uses a MySQL database.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>Can you explain the purpose of the doctype declaration in HTML?
+                     <h2><span>questions:-</span>Explain the difference between WordPress.com and WordPress.org.
                      </h2>
-                     <p><span>answers:-</span>The doctype declaration, usually seen at the beginning of an HTML
-                        document (
-                        DOCTYPE html), informs the browser about the version of HTML being used and helps it
-                        render the document correctly. It ensures that the browser interprets the HTML markup
-                        according to the appropriate specifications, minimizing rendering errors and ensuring
-                        consistency across different browsers.
+                     <p><span>answers:-</span>WordPress.com is a hosted platform where users can create a website for free or purchase premium plans for additional features. It handles hosting, security, and maintenance.
+                        WordPress.org is the official website for the WordPress software. Users can download the WordPress software for free and install it on their own web server. They are responsible for hosting, security, and maintenance.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>What are the key differences between inline and block-level
-                        elements
-                        in HTML?
+                     <h2><span>questions:-</span>Explain the difference between posts and pages in WordPress.
                      </h2>
-                     <p><span>answers:-</span>Inline elements are elements that do not start on a new line and
-                        only
-                        take up as much width as necessary. Examples include span, a, and img. Block-level
-                        elements,
-                        on the other hand, start on a new line and occupy the full width available. Examples
-                        include
-                        div, p, and h1 tags.
+                     <p><span>answers:-</span>Posts are dynamic content entries listed in reverse chronological order on the site's blog page. They are typically used for time-sensitive content like blog posts, news articles, or updates.
+                        Pages are static content entries that are not listed by date. They are used for permanent content like About Us, Contact, or Services pages.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>What are the new features introduced in HTML5?</h2>
-                     <p><span>answers:-</span>HTML5 introduced several new features including semantic elements
-                        (like
-                        header, footer, nav, etc.), audio and video support without plugins, canvas for drawing
-                        graphics, local storage, geolocation, and more.
+                     <h2><span>questions:-</span>What are taxonomies in WordPress?</h2>
+                     <p><span>answers:-</span>Taxonomies in WordPress are a way to organize and classify content. The two main types of taxonomies are categories and tags. Categories are hierarchical taxonomies used to group related content into broad topic areas, while tags are non-hierarchical taxonomies used to describe specific attributes of content.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>Explain the purpose of the meta tag in HTML.
+                     <h2><span>questions:-</span>How do you optimize the performance of a WordPress website?
                      </h2>
-                     <p><span>answers:-</span> The meta tag is used to provide metadata about an HTML document,
-                        such
-                        as character encoding, author, description, keywords, and viewport settings for
-                        responsive
-                        web design.
+                     <p><span>answers:-</span> Performance optimization techniques for WordPress include:
+                        Using a caching plugin like WP Super Cache or W3 Total Cache.
+                        Optimizing images by compressing them and using lazy loading.
+                        Minifying CSS and JavaScript files.
+                        Enabling server-side caching and using a content delivery network (CDN).
+                        Reducing HTTP requests and database queries.
+                        Implementing lazy loading for images and videos.
+                        Using asynchronous loading for scripts and stylesheets.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>What are the different types of lists in HTML?
+                     <h2><span>questions:-</span>How do you create a custom post type in WordPress?
                      </h2>
-                     <p><span>answers:-</span> HTML supports three types of lists: ordered lists (
-                        ol
-                        ), unordered lists (ul), and definition lists (dl).
+                     <p><span>answers:-</span>Custom post types allow you to create different types of content beyond posts and pages. To create a custom post type, you can use the register_post_type() function in your theme's functions.php file or in a custom plugin. Example:
+                        function custom_post_type() {
+                        register_post_type('portfolio', [
+                        'public' => true,
+                        'label'  => 'Portfolio',
+                        // Add more arguments as needed
+                        ]);
+                        }
+                        add_action('init', 'custom_post_type');
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>What is the difference between div and span in HTML?
+                     <h2><span>questions:-</span> By default, how many tables are there in WordPress?
                      </h2>
-                     <p><span>answers:-</span>'div' is a block-level element used to group larger sections of
-                        content, while 'span' is an inline element used to apply styles or group smaller
-                        sections of
-                        text within a line.
+                     <p><span>answers:-</span>By default, WordPress creates 12 tables in the database during the installation process. These tables store various types of data necessary for the functioning of a WordPress website. Here is a list of the default tables:
+                        wp_users: Stores user information such as username, password, email, etc.
+                        wp_usermeta: Stores additional metadata for users.
+                        wp_posts: Stores posts, pages, and custom post types.
+                        wp_postmeta: Stores additional metadata for posts, pages, and custom post types.
+                        wp_comments: Stores comments made on posts.
+                        wp_commentmeta: Stores additional metadata for comments.
+                        wp_terms: Stores categories and tags.
+                        wp_term_taxonomy: Links terms to taxonomies (e.g., categories to posts).
+                        wp_term_relationships: Links terms to objects (e.g., posts to categories).
+                        wp_term_meta: Stores additional metadata for terms.
+                        wp_options: Stores WordPress options and settings.
+                        wp_links: Stores links (deprecated since WordPress 3.5).
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>What are semantic elements in HTML? Give some examples.
+                     <h2><span>questions:-</span> Could you please Explain the difference between WordPress Categories and Tags.
                      </h2>
-                     <p><span>answers:-</span> Semantic elements provide meaning to the content they enclose,
-                        making
-                        it more understandable for both developers and browsers. Examples include header,
-                        footer,
-                        nav, rticle, section, aside, and main.
+                     <p><span>answers:-</span> The WordPress Categories are broad-ranging. It helps a user to identify a blog. A post must have at least one category.
+                        And the WordPress Tags are like categories, but they are used to describe a post more specifically. Tags are not necessary for every post.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>What are HTML tags?
+                     <h2><span>questions:-</span> Explain the purpose of a child theme.
                      </h2>
-                     <p><span>answers:-</span> HTML tags are elements used to mark up the content of a web page, defining its structure and formatting. They consist of angle brackets surrounding a keyword, which represents the function or purpose of the tag. HTML tags are paired, with an opening tag and a closing tag, and they enclose content to which they apply. Some tags may be self-closing if they don't contain any content.
+                     <p><span>answers:-</span> A child theme is used to customize and override the styles and templates of a parent theme without modifying the parent theme directly. It's beneficial for maintaining modifications even after parent theme updates. Changes made to the child theme won't be lost during updates, providing a safer way to customize your site's appearance and functionality.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span>What is a marquee in HTML?
+                     <h2><span>questions:-</span>How can you create a child theme in WordPress?
                      </h2>
-                     <p><span>answers:-</span>Marquee is used for scrolling text on a web page. It scrolls the image or text up, down, left, or right automatically. To apply for a marquee, you have to use marquee tags.
+                     <p><span>answers:-</span>To create a child theme in WordPress, you need to create a new folder in the “wp-content/themes” directory, create a “style.css” file with specific information and a reference to the parent theme, and optionally create a “functions.php” file for additional customization.
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span> Are the HTML tags and elements the same thing?
+                     <h2><span>questions:-</span> How can you display custom fields in WordPress?
                      </h2>
-                     <p><span>answers:-</span>No, HTML tags are used to define the structure of a web page, while HTML elements are made up of a set of tags that define a specific part of a web page.
+                     <p><span>answers:-</span>To display custom fields in WordPress, you can use the get_post_meta() function to retrieve the value of a specific custom field. You can then echo or display it wherever you want it to appear.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> How can you create a custom post type in WordPress?
+                     </h2>
+                     <p><span>answers:-</span>You can create a custom post type in WordPress by using the register_post_type() function in your theme’s functions.php file or by using a plugin like Custom Post Type UI.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> What is the purpose of the functions.php file in a WordPress theme?
+                     </h2>
+                     <p><span>answers:-</span>The functions.php file in a WordPress theme is used to add custom PHP code, functions, or hooks to modify the theme’s functionality or add new features.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> How can you create a custom template in WordPress?
+                     </h2>
+                     <p><span>answers:-</span>You can create a custom template in WordPress by creating a new PHP file in your theme’s folder. You can also add the necessary code to define the template’s structure and functionality.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> What is the purpose of the wp-config.php file?
+                     </h2>
+                     <p><span>answers:-</span>The <strong>wp-config.php</strong> file in WordPress holds crucial configuration settings for your site. This includes database connection details, security keys, debugging settings, and more. It's a critical file for the functioning and security of your WordPress site.
                      </p>
                   </li>
                   </ul>
@@ -152,46 +176,45 @@
             </div>
          </div>
       </div>
-
       <div class="Footer-section">
          <div class="container">
-             <div class="row ">
-                 <div class="col-lg-12">
-                     <div class="footer-contents d-flex justify-content-center align-items-center flex-column">
-                         <div><a class="navbar-brand" href="#">Important</a></div>
-                         <div class="footer-icons">
-                             <ul class="navbar-nav d-flex flex-row ">
-                                 <li class="nav-link"><i class="bi bi-facebook"></i></li>
-                                 <li class="nav-link"><i class="bi bi-linkedin"></i></li>
-                                 <li class="nav-link"><i class="bi bi-twitter"></i></li>
-                             </ul>
-                         </div>
-                         <div class="footer-menu">
-                             <ul class="navbar-nav d-flex flex-row ">
-                                 <li class="nav-link">HTML</li>
-                                 <li class="nav-link">CSS</li>
-                                 <li class="nav-link">Javascript</li>
-                                 <li class="nav-link mo_hide_test">bootstrap</li>
-                                 <li class="nav-link mo_hide_test">React</li>
-                                 <li class="nav-link mo_hide_test">Wordpress</li>
-                             </ul>
-                         </div>
+            <div class="row ">
+               <div class="col-lg-12">
+                  <div class="footer-contents d-flex justify-content-center align-items-center flex-column">
+                     <div><a class="navbar-brand" href="#">Important</a></div>
+                     <div class="footer-icons">
+                        <ul class="navbar-nav d-flex flex-row ">
+                           <li class="nav-link"><i class="bi bi-facebook"></i></li>
+                           <li class="nav-link"><i class="bi bi-linkedin"></i></li>
+                           <li class="nav-link"><i class="bi bi-twitter"></i></li>
+                        </ul>
                      </div>
-                 </div>
-             </div>
+                     <div class="footer-menu">
+                        <ul class="navbar-nav d-flex flex-row ">
+                           <li class="nav-link">HTML</li>
+                           <li class="nav-link">CSS</li>
+                           <li class="nav-link">Javascript</li>
+                           <li class="nav-link mo_hide_test">bootstrap</li>
+                           <li class="nav-link mo_hide_test">React</li>
+                           <li class="nav-link mo_hide_test">Wordpress</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
-     </div>
-     <section id="footer-btm">
+      </div>
+      <section id="footer-btm">
          <div class="container">
-             <div class="row">
-                 <div class="col-lg-12">
-                     <div class="fop-btm text-center">
-                         <h2>Copyright © 2023. All rights reserved by <a href="#">DEVELOPER</a></h2>
-                     </div>
-                 </div>
-             </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="fop-btm text-center">
+                     <h2>Copyright © 2023. All rights reserved by <a href="#">DEVELOPER</a></h2>
+                  </div>
+               </div>
+            </div>
          </div>
-     </section>
+      </section>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
          crossorigin="anonymous"></script>
