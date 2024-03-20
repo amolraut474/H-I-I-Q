@@ -1,131 +1,170 @@
 * {
-    padding: 0;
-    margin: 0;
+padding: 0;
+margin: 0;
 }
 h2,p{
-    font-size: 22px !important;
-    font-family: pb;
-    padding-bottom: 13px;
-   
-
+font-size: 22px !important;
+font-family: pb;
+padding-bottom: 13px;
 }
 .html_interview {
-    padding: 60px 0px;
+padding: 60px 0px;
 }
 li::marker{
-    font-size: 22px !important;  
+font-size: 22px !important;  
 }
 span{
-    font-size: 25px;
-    color: #fbaa33;
-    font-family: pb;
-    margin: 0px 10px;
-    text-transform: capitalize;
+font-size: 25px;
+color: #fbaa33;
+font-family: pb;
+margin: 0px 10px;
+text-transform: capitalize;
 }
 body{
-    background-color: #010101 !important;
-    color: #fff !important;
+background-color: #010101 !important;
+color: #fff !important;
 }
-
 .section-1 .navbar-nav {
-    gap: 20px !important;
+gap: 20px !important;
 }
-
 .navbar-brand {
-    color: #e3881b !important;
-    font-size: 28px;
-    font-weight: 800;
+color: #e3881b !important;
+font-size: 28px;
+font-weight: 800;
 }
-
 .Header-s {
-    width: 50%;
+width: 50%;
 }
-
 .section-1 .navbar {
-    background: #010101 !important;
-    border-bottom: 1px solid gray;
+background: #010101 !important;
+border-bottom: 1px solid gray;
 }
-
 .nav-link {
-    color: #fff !important;
-    font-size: 19px !important;
-    font-weight: 600 !important;
-    text-transform: capitalize !important;
+color: #fff !important;
+font-size: 19px !important;
+font-weight: 600 !important;
+text-transform: capitalize !important;
 }
-
 .navbar-nav .nav-link.active {
-    color: #fbaa33 !important;
+color: #fbaa33 !important;
 }
-
-
+table {
+border: 1px solid #ccc;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+width: 100%;
+table-layout: fixed;
+}
+table tr {
+border: 1px solid #ddd;
+padding: .35em;
+}
+table th,
+table td {
+padding: .625em;
+text-align: center;
+border: 1px solid #ddd;
+}
+table th {
+font-size: .85em;
+letter-spacing: .1em;
+text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+table {
+border: 0;
+}
+table caption {
+font-size: 1.3em;
+}
+table thead {
+border: none;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+}
+table tr {
+border-bottom: 3px solid #ddd;
+display: block;
+margin-bottom: .625em;
+}
+table td {
+border-bottom: 1px solid #ddd;
+display: block;
+font-size: .8em;
+text-align: right;
+}
+table td::before {
+content: attr(data-label);
+float: left;
+font-weight: bold;
+text-transform: uppercase;
+}
+table td:last-child {
+border-bottom: 0;
+}
+}
 .footer-contents {
-    width: 50%;
-    margin: 0 auto;
-    gap: 35px;
-  }
-  
-  .footer-contents .navbar-brand {
-    font-size: 40px;
-  }
-  
-  #footer-btm {
-    background: #313030;
-    padding: 30px 0;
-    color: #fff;
-  }
-  
-  .Footer-section {
-    padding: 80px 0px;
-    background: #222222;
-    color: #fff;
-  
-  }
-  
-  .fop-btm a {
-    color: #fbaa33;
-    text-decoration: none;
-  }
-  
-  .fop-btm h2 {
-    font-size: 18px;
-  }
-  
-  .footer-icons .nav-link {
-    margin: 0px 20px;
-    font-size: 25px !important;
-    border: 1px solid;
-    padding: 10px 16px;
-    border-radius: 60%;
-  }
-  
-  .footer-menu ul {
-    gap: 60px;
-  }
-  
-  .footer-menu li {
-    font-size: 20px !important;
-    font-family: pb;
-    font-weight: 900 !important;
-  }
-  
+width: 50%;
+margin: 0 auto;
+gap: 35px;
+}
+.footer-contents .navbar-brand {
+font-size: 40px;
+}
+#footer-btm {
+background: #313030;
+padding: 30px 0;
+color: #fff;
+}
+.Footer-section {
+padding: 80px 0px;
+background: #222222;
+color: #fff;
+}
+.fop-btm a {
+color: #fbaa33;
+text-decoration: none;
+}
+.fop-btm h2 {
+font-size: 18px;
+}
+.footer-icons .nav-link {
+margin: 0px 20px;
+font-size: 25px !important;
+border: 1px solid;
+padding: 10px 16px;
+border-radius: 60%;
+}
+.footer-menu ul {
+gap: 60px;
+}
+.footer-menu li {
+font-size: 20px !important;
+font-family: pb;
+font-weight: 900 !important;
+}
 /* Home page */
 @media (max-width:425px) {
-
-    .section-1 .navbar>.container {
-        flex-direction: row-reverse !important;
-        padding: 0px 20px;
-    }
-
-    span.navbar-toggler-icon {
-        color: #fff !important;
-    }
-    .footer-menu ul {
-        gap: 20px !important;
-    }
-    .footer-menu li {
-        font-size: 12px !important;
-    }
-    button.navbar-toggler {
-        background: #fff;
-    }
+.section-1 .navbar>.container {
+flex-direction: row-reverse !important;
+padding: 0px 20px;
+}
+span.navbar-toggler-icon {
+color: #fff !important;
+}
+.footer-menu ul {
+gap: 20px !important;
+}
+.footer-menu li {
+font-size: 12px !important;
+}
+button.navbar-toggler {
+background: #fff;
+}
 }
