@@ -83,7 +83,7 @@ padding: 8px;
 text-align: left;
 }
 a.nav-link:hover {
-    color: #fbaa24 !important;
+    color: #fbaa30 !important;
 }
 @media screen and (max-width: 320px) {
 table, thead, tbody, th, td, tr {
