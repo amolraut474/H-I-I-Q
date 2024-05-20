@@ -15,8 +15,8 @@
          <nav class="navbar navbar-expand-lg bg-body-tertiary pt-3 pb-3">
             <div class="container">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="Header-s">
@@ -31,7 +31,8 @@
                         <a class="nav-link " aria-current="page" href="./CSS_interview_questions.html">CSS</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./JAVASCRIPT_interview_questions.html">Javascript</a>
+                        <a class="nav-link " aria-current="page"
+                           href="./JAVASCRIPT_interview_questions.html">Javascript</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="./BOOTSTRAP_interview_questions.html">bootstrap</a>
@@ -55,26 +56,38 @@
                   <ol>
                   <li>
                      <h2><span>questions:-</span>What is WordPress?</h2>
-                     <p><span>answers:-</span>WordPress is an open-source content management system (CMS) that allows users to easily create, manage, and publish content on the web. It is based on PHP and uses a MySQL database.
+                     <p><span>answers:-</span>WordPress is an open-source content management system (CMS) that allows
+                        users to easily create, manage, and publish content on the web. It is based on PHP and uses a
+                        MySQL database.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span>Explain the difference between WordPress.com and WordPress.org.
                      </h2>
-                     <p><span>answers:-</span>WordPress.com is a hosted platform where users can create a website for free or purchase premium plans for additional features. It handles hosting, security, and maintenance.
-                        WordPress.org is the official website for the WordPress software. Users can download the WordPress software for free and install it on their own web server. They are responsible for hosting, security, and maintenance.
+                     <p><span>answers:-</span>WordPress.com is a hosted platform where users can create a website for
+                        free or purchase premium plans for additional features. It handles hosting, security, and
+                        maintenance.
+                        WordPress.org is the official website for the WordPress software. Users can download the
+                        WordPress software for free and install it on their own web server. They are responsible for
+                        hosting, security, and maintenance.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span>Explain the difference between posts and pages in WordPress.
                      </h2>
-                     <p><span>answers:-</span>Posts are dynamic content entries listed in reverse chronological order on the site's blog page. They are typically used for time-sensitive content like blog posts, news articles, or updates.
-                        Pages are static content entries that are not listed by date. They are used for permanent content like About Us, Contact, or Services pages.
+                     <p><span>answers:-</span>Posts are dynamic content entries listed in reverse chronological order on
+                        the site's blog page. They are typically used for time-sensitive content like blog posts, news
+                        articles, or updates.
+                        Pages are static content entries that are not listed by date. They are used for permanent
+                        content like About Us, Contact, or Services pages.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span>What are taxonomies in WordPress?</h2>
-                     <p><span>answers:-</span>Taxonomies in WordPress are a way to organize and classify content. The two main types of taxonomies are categories and tags. Categories are hierarchical taxonomies used to group related content into broad topic areas, while tags are non-hierarchical taxonomies used to describe specific attributes of content.
+                     <p><span>answers:-</span>Taxonomies in WordPress are a way to organize and classify content. The
+                        two main types of taxonomies are categories and tags. Categories are hierarchical taxonomies
+                        used to group related content into broad topic areas, while tags are non-hierarchical taxonomies
+                        used to describe specific attributes of content.
                      </p>
                   </li>
                   <li>
@@ -93,11 +106,13 @@
                   <li>
                      <h2><span>questions:-</span>How do you create a custom post type in WordPress?
                      </h2>
-                     <p><span>answers:-</span>Custom post types allow you to create different types of content beyond posts and pages. To create a custom post type, you can use the register_post_type() function in your theme's functions.php file or in a custom plugin. Example:
+                     <p><span>answers:-</span>Custom post types allow you to create different types of content beyond
+                        posts and pages. To create a custom post type, you can use the register_post_type() function in
+                        your theme's functions.php file or in a custom plugin. Example:
                         function custom_post_type() {
                         register_post_type('portfolio', [
                         'public' => true,
-                        'label'  => 'Portfolio',
+                        'label' => 'Portfolio',
                         // Add more arguments as needed
                         ]);
                         }
@@ -107,7 +122,9 @@
                   <li>
                      <h2><span>questions:-</span> By default, how many tables are there in WordPress?
                      </h2>
-                     <p><span>answers:-</span>By default, WordPress creates 12 tables in the database during the installation process. These tables store various types of data necessary for the functioning of a WordPress website. Here is a list of the default tables:
+                     <p><span>answers:-</span>By default, WordPress creates 12 tables in the database during the
+                        installation process. These tables store various types of data necessary for the functioning of
+                        a WordPress website. Here is a list of the default tables:
                         wp_users: Stores user information such as username, password, email, etc.
                         wp_usermeta: Stores additional metadata for users.
                         wp_posts: Stores posts, pages, and custom post types.
@@ -123,63 +140,160 @@
                      </p>
                   </li>
                   <li>
-                     <h2><span>questions:-</span> Could you please Explain the difference between WordPress Categories and Tags.
+                     <h2><span>questions:-</span> Could you please Explain the difference between WordPress Categories
+                        and Tags.
                      </h2>
-                     <p><span>answers:-</span> The WordPress Categories are broad-ranging. It helps a user to identify a blog. A post must have at least one category.
-                        And the WordPress Tags are like categories, but they are used to describe a post more specifically. Tags are not necessary for every post.
+                     <p><span>answers:-</span> The WordPress Categories are broad-ranging. It helps a user to identify a
+                        blog. A post must have at least one category.
+                        And the WordPress Tags are like categories, but they are used to describe a post more
+                        specifically. Tags are not necessary for every post.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span> Explain the purpose of a child theme.
                      </h2>
-                     <p><span>answers:-</span> A child theme is used to customize and override the styles and templates of a parent theme without modifying the parent theme directly. It's beneficial for maintaining modifications even after parent theme updates. Changes made to the child theme won't be lost during updates, providing a safer way to customize your site's appearance and functionality.
+                     <p><span>answers:-</span> A child theme is used to customize and override the styles and templates
+                        of a parent theme without modifying the parent theme directly. It's beneficial for maintaining
+                        modifications even after parent theme updates. Changes made to the child theme won't be lost
+                        during updates, providing a safer way to customize your site's appearance and functionality.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span>How can you create a child theme in WordPress?
                      </h2>
-                     <p><span>answers:-</span>To create a child theme in WordPress, you need to create a new folder in the “wp-content/themes” directory, create a “style.css” file with specific information and a reference to the parent theme, and optionally create a “functions.php” file for additional customization.
+                     <p><span>answers:-</span>To create a child theme in WordPress, you need to create a new folder in
+                        the “wp-content/themes” directory, create a “style.css” file with specific information and a
+                        reference to the parent theme, and optionally create a “functions.php” file for additional
+                        customization.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span> How can you display custom fields in WordPress?
                      </h2>
-                     <p><span>answers:-</span>To display custom fields in WordPress, you can use the get_post_meta() function to retrieve the value of a specific custom field. You can then echo or display it wherever you want it to appear.
+                     <p><span>answers:-</span>To display custom fields in WordPress, you can use the get_post_meta()
+                        function to retrieve the value of a specific custom field. You can then echo or display it
+                        wherever you want it to appear.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span> How can you create a custom post type in WordPress?
                      </h2>
-                     <p><span>answers:-</span>You can create a custom post type in WordPress by using the register_post_type() function in your theme’s functions.php file or by using a plugin like Custom Post Type UI.
+                     <p><span>answers:-</span>You can create a custom post type in WordPress by using the
+                        register_post_type() function in your theme’s functions.php file or by using a plugin like
+                        Custom Post Type UI.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span> What is the purpose of the functions.php file in a WordPress theme?
                      </h2>
-                     <p><span>answers:-</span>The functions.php file in a WordPress theme is used to add custom PHP code, functions, or hooks to modify the theme’s functionality or add new features.
+                     <p><span>answers:-</span>The functions.php file in a WordPress theme is used to add custom PHP
+                        code, functions, or hooks to modify the theme’s functionality or add new features.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span> How can you create a custom template in WordPress?
                      </h2>
-                     <p><span>answers:-</span>You can create a custom template in WordPress by creating a new PHP file in your theme’s folder. You can also add the necessary code to define the template’s structure and functionality.
+                     <p><span>answers:-</span>You can create a custom template in WordPress by creating a new PHP file
+                        in your theme’s folder. You can also add the necessary code to define the template’s structure
+                        and functionality.
                      </p>
                   </li>
                   <li>
                      <h2><span>questions:-</span> What is the purpose of the wp-config.php file?
                      </h2>
-                     <p><span>answers:-</span>The <strong>wp-config.php</strong> file in WordPress holds crucial configuration settings for your site. This includes database connection details, security keys, debugging settings, and more. It's a critical file for the functioning and security of your WordPress site.
+                     <p><span>answers:-</span>The <strong>wp-config.php</strong> file in WordPress holds crucial
+                        configuration settings for your site. This includes database connection details, security keys,
+                        debugging settings, and more. It's a critical file for the functioning and security of your
+                        WordPress site.
                      </p>
                   </li>
-                      <li>
-                     <h2><span>questions:-</span> According to you, What do you think are the hooks? Can you define different types of hooks in WordPress?
+                  <li>
+                     <h2><span>questions:-</span> According to you, What do you think are the hooks? Can you define
+                        different types of hooks in WordPress?
                      </h2>
-                     <p><span>answers:-</span>As the Hooks enable users to create the WordPress themes or the plug-ins with short code without changing the original files.
-
-These are the two types of hooks:
-
-Action hooks: Action hooks refers to facilitating you to insert an additional code from an outside resource.
-Filter hooks: Filter hooks refers to facilitating you to add content or text at the end of the post.
+                     <p><span>answers:-</span>As the Hooks enable users to create the WordPress themes or the plug-ins
+                        with short code without changing the original files.
+                        These are the two types of hooks:
+                        Action hooks: Action hooks refers to facilitating you to insert an additional code from an
+                        outside resource.
+                        Filter hooks: Filter hooks refers to facilitating you to add content or text at the end of the
+                        post.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> What is a child theme in WordPress?
+                     </h2>
+                     <p><span>answers:-</span>A child theme is a theme that inherits the functionality and styling of another theme called the parent theme.
+                        It allows you to make modifications to a theme without altering the original theme files.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> Explain the WordPress loop.
+                     </h2>
+                     <p><span>answers:-</span>The WordPress loop is a PHP code structure used to display posts or pages on a WordPress website. 
+                        It retrieves content from the database based on the current context and displays it on the webpage.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> What are WordPress themes and plugins?
+                     </h2>
+                     <p><span>answers:-</span>Themes control the design and layout of a WordPress website, while plugins add specific functionalities to enhance its features.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> Which is considered more secure wordpress.com or wordpress.org?
+                     </h2>
+                     <p><span>answers:-</span>Therefore it is the wordpress.com, it is relatively more secure than wordpress.org and because they limit the themes and there they
+                        do not allow plugin's installation. However, the security of your website is dependent on the 
+                        hosting business and the actions they take to prevent security issues.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> What are Categories in WordPress?
+                     </h2>
+                     <p><span>answers:-</span>Categories in WordPress are a way to organize and group posts based on topics or subjects.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> WordPress: free and paid themes?
+                     </h2>
+                     <p><span>answers:-</span>free:-
+                        (1)Twenty Twenty-One
+                        (2)Twenty Twenty-Two
+                        (3)Twenty Twenty-Four
+                        (4)Twenty Twenty-Three
+                        (5)Astra
+                        paid:-
+                        (1)Divi
+                        (2)Avada
+                        (3)Enfold
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> Explain the purpose of a child theme.
+                     </h2>
+                     <p><span>answers:-</span>A child theme is used to customize and override the styles and templates of a parent theme without modifying the parent theme directly.
+                        It's beneficial for maintaining modifications even after parent theme updates. 
+                        Changes made to the child theme won't be lost during updates, providing a safer way to customize your site's appearance and functionality.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span> What is the purpose of the functions.php file in a WordPress theme?
+                     </h2>
+                     <p><span>answers:-</span>The functions.php file is critical in a WordPress theme's directory. It allows you to add custom code,
+                        functions, and hooks to modify or extend the theme's functionality. It's often used to enqueue stylesheets,
+                        register custom post  types, and add theme-specific features.
+                     </p>
+                  </li>
+                  <li>
+                     <h2><span>questions:-</span>Tell me the some  some bilder names in WordPress you have used.
+                     </h2>
+                     <p><span>answers:-</span>
+                        (1)Elementor
+                        (2)Beaver Builder
+                        (3)Divi Builder
+                        (4)Visual Composer
+                        (5)WPBakery Page Builder
                      </p>
                   </li>
                   </ul>
